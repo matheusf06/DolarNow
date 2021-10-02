@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 65px;
+  background-color: #000;
+}
+.logo {
+  margin-left: 20px;
+}
+header a,
+.footer a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #fff;
+}
+.footer a,
+header nav a {
+  margin-right: 25px;
+  text-transform: uppercase;
+  border: 1px solid #fff;
+  padding: 10px;
+}
+header nav a:hover,
+.footer a:hover {
+  background-color: #fff;
+  color: #000;
+  transition: 0.4s;
+}
+h1,
+p {
+  font-family: Lato;
+}
+.content,
+.card {
+  display: flex;
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://raw.githubusercontent.com/matheusf06/Api-do-dolar/master/src/assets/money.jpg');
+  background-repeat: repeat;
+  background-size: 200px;
+  justify-content: center;
+  align-items: center;
+}
+.card {
+  background-color: #fff;
+  width: 350px;
+  height: 350px;
+  padding: 35px;
+  text-align: center;
+  justify-content: space-around;
+  align-items: stretch;
+  border: 1px solid #000;
+}
+.subCard {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 350px;
+  justify-content: space-around;
+}
+.card input {
+  max-width: 100px;
+  margin-right: 15px;
+}
+.footer {
+  color: #fff;
+  justify-content: space-around;
+}
+.cardAboutPage {
+  background-color: #fff;
+  width: 350px;
+  height: 350px;
+  padding: 35px;
+  text-align: center;
+  border: 1px solid #000;
+}
+.cardAboutPage h2 {
+  margin-bottom: 15px;
+}
+
+@media (max-width: 425px) {
+  .logo {
+    font-size: 20px;
+  }
+  header nav a {
+    margin-right: 15px;
+    margin-left: 0px;
+    border: 1px solid #fff;
+  }
+  .card {
+    width: 290px;
+    height: 350px;
+    padding: 15px;
+  }
+  .cardAboutPage {
+    width: 290px;
+    height: 350px;
+    padding: 15px;
+  }
+}
